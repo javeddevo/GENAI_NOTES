@@ -1,0 +1,37 @@
+TWO TYPES OF ALGOS IN GENAI
+======================================
+1.Generative Adversarial Networks (GANs)
+2.Variational Autoencoders (VAEs)
+
+Generative Adversarial Networks (GANs)
+Imagine a game between two players: a forger and a detective. The forger's job is to create fake art, while the detective's job is to spot the fakes1. Both players get better over time as they learn from each other. In the end, the forger becomes so good that the detective can't tell the difference between real and fake art1.
+
+In technical terms, a GAN consists of two neural networks:
+
+Generator: Creates fake data (like images).
+
+Discriminator: Tries to distinguish between real and fake data.
+
+They train together, improving each other until the generator produces very realistic data.
+
+Variational Autoencoders (VAEs)
+Think of a VAE as a data compressor and data expander. You have a machine that:
+
+Compresses an image into a simpler form (like a sketch).
+
+Expands the sketch back into the original image.
+
+The key is that the compressed form (called the latent space) is a smooth and continuous space, which makes it easier to generate new images by tweaking the sketch.
+
+In technical terms, a VAE consists of:
+
+Encoder: Converts input data into a compressed form in the latent space.
+
+Decoder: Converts the compressed form back into the original data.
+
+VAEs are great for tasks like generating new images that are similar to the training images.
+
+Summary
+GANs: Focus on creating realistic data through a competitive process between two networks.
+
+VAEs: Focus on encoding and decoding data, making it easy to generate new data by manipulating the encoded form.
